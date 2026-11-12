@@ -4,7 +4,7 @@ A dependency-free portfolio with the compact layout and hover-reveal interaction
 
 Run `npm run dev` and open http://127.0.0.1:5173. Run `npm run check` for JavaScript syntax checks. Deploy the repository as a static site; no build is required.
 
-The canvas renders seven independent ASCII cloud formations from evolving density fields in `clouds.js`. Overlapping cloud lobes and layered noise create billowing shapes in the reference image's cream/navy palette. Each formation drifts left to right at its own speed. Move the pointer to part the clouds, or click/tap to send an expanding gust through them. The original image remains in `assets/cloud-reference.png` as a design reference; it is not rendered as a moving texture. Animation pauses in hidden tabs, respects reduced-motion preferences, and has a manual pause control. Pointer interactions do not intercept links or touch scrolling.
+The canvas reconstructs the supplied image's cloud contours as a live density field in clouds.js. Fine dot and crosshatch cells use cream highlights, teal shadows, and deep navy gaps. Evolving flow warps and different horizontal speeds animate the formations; pointer movement parts the clouds and clicks/taps send expanding gusts. No pre-rendered image tiles move across the screen. The central text column is shaded for legibility. Animation respects reduced motion, pauses in hidden tabs, and includes a manual pause control.
 
 Work icons are local copies of the actual company favicons: RBC from `https://www.rbc.com/favicon.ico`, WACC from `https://waccglobal.org/wp-content/uploads/2019/08/cropped-wacc-site-icon.png`, and Riipen from Google's favicon cache for `riipen.com`. These brand assets belong to their respective organizations.
 

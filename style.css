@@ -9,3 +9,4 @@ header{margin-bottom:.75rem}h1{font-size:1.4rem;font-weight:400;margin-bottom:.2
 @media(max-width:650px){.portfolio{padding:3rem 1.5rem}.shade{background:rgba(3,6,15,.86)}.row{font-size:.88rem}h1{font-size:1.3rem}.title{min-width:0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .company-logo{object-fit:contain;background:transparent;border-radius:2px}.shade{background:radial-gradient(ellipse 380px 520px at center,rgba(6,9,22,.88) 0%,rgba(6,9,22,.7) 55%,rgba(6,9,22,.12) 100%)}@media(max-width:650px){.shade{background:radial-gradient(ellipse 75% 70% at center,rgba(6,9,22,.9),rgba(6,9,22,.55))}}
+.shade{background:linear-gradient(90deg,transparent 0%,rgba(3,7,25,.15) calc(50% - 390px),rgba(3,7,25,.94) calc(50% - 280px),rgba(3,7,25,.94) calc(50% + 280px),rgba(3,7,25,.15) calc(50% + 390px),transparent 100%)}@media(max-width:650px){.shade{background:rgba(3,7,25,.84)}}
