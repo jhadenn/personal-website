@@ -4,7 +4,9 @@ A dependency-free portfolio with the compact layout and hover-reveal interaction
 
 Run `npm run dev` and open http://127.0.0.1:5173. Run `npm run check` for JavaScript syntax checks. Deploy the repository as a static site; no build is required.
 
-The canvas reconstructs the supplied image's cloud contours as a live density field in clouds.js. Fine dot and crosshatch cells use cream highlights, teal shadows, and deep navy gaps. Evolving flow warps and different horizontal speeds animate the formations; pointer movement parts the clouds and clicks/taps send expanding gusts. No pre-rendered image tiles move across the screen. The central text column is shaded for legibility. Animation respects reduced motion, pauses in hidden tabs, and includes a manual pause control.
+Cloud detail is baked once into five small offscreen puff canvases. Six rounded clouds animate those puffs with independent drift, gentle billowing, pointer repulsion, and click/tap gusts. Cream and teal halftone shading fades at the edges and near the text; no center mask is applied. Rendering is capped at 20 fps and 1x backing resolution, with 30 sprite draws plus one clear per frame. Hidden tabs and reduced-motion preferences pause animation. The original image remains a palette/style reference.
+
+Run node scripts/check-cloud-budget.cjs to check the real renderer against a 200-call per-frame budget at a simulated 1920x1080 viewport. This deterministic drawing-workload regression check does not measure GPU time or system-wide responsiveness.
 
 Work icons are local copies of the actual company favicons: RBC from `https://www.rbc.com/favicon.ico`, WACC from `https://waccglobal.org/wp-content/uploads/2019/08/cropped-wacc-site-icon.png`, and Riipen from Google's favicon cache for `riipen.com`. These brand assets belong to their respective organizations.
 
