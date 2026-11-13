@@ -4,7 +4,7 @@ A dependency-free portfolio with the compact layout and hover-reveal interaction
 
 Run `npm run dev` and open http://127.0.0.1:5173. Run `npm run check` for JavaScript syntax checks. Deploy the repository as a static site; no build is required.
 
-The page uses a black background with a decorative ASCII cross on the right.
+The page uses a black background with an ASCII cross extruded into 3D layers on the right. Drag to rotate, double-click to reset, or focus it and use the arrow keys and Home. Its interaction lives in `cross.js`.
 
 Work icons are local copies of the actual company favicons: RBC from `https://www.rbc.com/favicon.ico`, WACC from `https://waccglobal.org/wp-content/uploads/2019/08/cropped-wacc-site-icon.png`, and Riipen from Google's favicon cache for `riipen.com`. The degree line uses Ontario Tech's official favicon. These brand assets belong to their respective organizations.
 

@@ -20,3 +20,10 @@ header{margin-bottom:.75rem}h1{font-size:1.4rem;font-weight:400;margin-bottom:.2
 .degree-line a{display:inline-flex;align-items:center;gap:.3rem;color:#faf9ef;font-weight:400;white-space:nowrap}
 .degree-line a img{width:18px;height:18px;object-fit:contain}
 .mark{width:18px;height:18px}
+.cross-scene{position:absolute;top:50%;left:calc(50% + 280px);transform:translateY(-50%);perspective:1200px}
+.cross-model{display:grid;transform-style:preserve-3d;cursor:grab;pointer-events:auto;touch-action:none;outline:none}
+.cross-model.dragging{cursor:grabbing}
+.cross-model:focus-visible{outline:1px dashed #969b9f;outline-offset:16px}
+.cross-layer{grid-area:1/1;font-family:"Courier New",monospace;font-size:clamp(8px,.78vw,13px);font-weight:400;line-height:1.13;white-space:pre;pointer-events:none}
+@media(max-width:1099px){.cross-scene{left:calc(50% + 200px);opacity:.4}}
+@media(max-width:650px){.cross-scene{left:62%;opacity:.2}.cross-layer{font-size:9px}}
